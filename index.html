@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #e3e3e3;
             text-align: center;
             height: 100vh;
             display: flex;
@@ -17,7 +17,7 @@
             justify-content: space-between;
         }
         header {
-            background-color: #007bff; /* Changed to blue */
+            background-color: #ff5733; /* Changed to orange-red */
             color: white;
             padding: 20px;
             font-size: 28px;
@@ -31,6 +31,21 @@
             align-items: center;
             width: 100%;
             padding: 20px;
+        }
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
         }
         footer {
             background-color: #222;
@@ -46,10 +61,24 @@
 
 <div class="container">
     <h2>Welcome</h2>
-    <p>Your web server is up and running using Ansiblle playbook and jenkins job.</p>
+    <p>Your web server is up and running.</p>
+    <div class="cards">
+        <div class="card">
+            <h3>Deployment Status</h3>
+            <p>Latest build deployed successfully.</p>
+        </div>
+        <div class="card">
+            <h3>Server Health</h3>
+            <p>All systems operational.</p>
+        </div>
+        <div class="card">
+            <h3>Next Steps</h3>
+            <p>Monitor logs and performance.</p>
+        </div>
+    </div>
 </div>
 
-<footer>&copy; 2024 Simple Webpage</footer>
+<footer>&copy; 2024 Jenkins Deployment Dashboard</footer>
 
 </body>
 </html>
